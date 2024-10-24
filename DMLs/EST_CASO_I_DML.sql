@@ -115,12 +115,26 @@ REFERENCES PRODUTOS(PROD_COD));
 
 -- ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ --
 
+-- 1 - ALTER
 
 --  Adicionando coluna na tabela PRODUTOS
-ALTER TABLE PRODUTOS ADD PROD_DATAVALIDADE DATE;
+ALTER TABLE FORNECEDORES ADD FORN_SOBRENOME VARCHAR(50) NOT NULL;
 
-ALTER TABLE pessoas DROP COLUMN idade;
+-- Removendo a coluna FILIAL_CODPOSTAL
+ALTER TABLE FILIAIS DROP COLUMN FILIAL_CODPOSTAL;
 
-ALTER TABLE pessoas MODIFY COLUMN nome VARCHAR(150);
+-- Modificando a coluna PROD_ESPECTEC
+ALTER TABLE PRODUTOS MODIFY COLUMN PROD_ESPECTEC VARCHAR(200);
 
-ALTER TABLE pessoas CHANGE COLUMN nome nome_completo VARCHAR(150);
+-- Renomeando a coluna 
+ALTER TABLE FILIAIS CHANGE COLUMN FILIAL_ESTADO FILIAL_UF VARCHAR(150);
+
+
+-- 2 - DROP
+
+-- Caso eu queira excluir meu banco de dados, usaria esse comando
+DROP DATABASE EC1_CC1N;
+
+-- Caso eu queira excluir uma tabela do meu banco de dados, usuaria esse comando
+DROP TABLE PRODUTOS;
+
