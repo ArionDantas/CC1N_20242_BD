@@ -7,7 +7,7 @@ A Data Definition Language (DDL) é uma sublinguagem do SQL usada para definir, 
 
 ### 1. CREATE
 #### Uso
-- Para criar novas tabelas, bancos de dados, índices, visões e outros objetos no banco de dados.
+- Para criar novas tabelas, bancos de dados, índices, visões e outros objetos no banco de dados..
 
 #### Critérios
 - Use `CREATE` quando precisar definir novas estruturas de dados.
