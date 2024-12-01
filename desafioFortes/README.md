@@ -78,7 +78,7 @@ O sistema é otimizado para gerar relatórios e dashboards detalhados, proporcio
 
 ## Diagrama Entidade-Relacionamento (DER)
 O diagrama abaixo ilustra a estrutura do banco de dados e os relacionamentos entre as entidades.
-<img src="./image/diagrama.png" alt="Logo do Projeto"/>
+<img src="./DER_LOGICO.jpeg" alt="Logo do Projeto"/>
 
 ---
 
